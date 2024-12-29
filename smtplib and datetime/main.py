@@ -16,7 +16,7 @@ if day_of_week == 2:
         connection.starttls()
         connection.login(user=my_email, password=password)
         connection.sendmail(from_addr=my_email,
-                            to_addrs="ryanfmiami@gmail.com",
+                            to_addrs="",
                             msg=f"Subject:inspo quote\n\n{rand_quote}")
 
 
