@@ -45,7 +45,7 @@ if is_iss_overhead() and is_night():
         connection.starttls()
         connection.login(user=my_email, password=password)
         connection.sendmail(from_addr=my_email,
-                            to_addrs="ryanfmiami@gmail.com",
+                            to_addrs="",
                             msg=f"Subject:ISS overhead!\n\nISS is overhead and visible!")
 
 
