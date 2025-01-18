@@ -9,13 +9,13 @@ soup = BeautifulSoup(yc_web_page, "html.parser")
 all_tags = soup.find_all("a", class_="storylink")
 all_span = soup.find_all(name="span", class_="score")
 
-for span in all_span:
-    print(span.text)
+for i in range(len(all_tags)):
+    print(all_tags[i].text)
+    print(all_tags[i]['href'])
+    print(all_span[i].text)
+    print("\n")
 
-# for tag in all_tags:
-#     print(tag)
-#     # print(tag.text)
-#     # print(tag['href'])
+
 
 # with open("website.html") as html:
 #     html_lines = html.read()
